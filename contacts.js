@@ -3,7 +3,6 @@ import path from "path";
 import { nanoid } from "nanoid";
 
 const contactsPath = path.join("db", "contacts.json");
-
 export async function listContacts() {
     const result = await fs.readFile(contactsPath);
     return JSON.parse(result);
